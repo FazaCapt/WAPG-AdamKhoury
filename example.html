@@ -3,13 +3,13 @@
     width: 100px;
     height: 100px;
     background-color: orange;
-    transition-property: background-color;
-    transition-duration: 0.5s;
-    transition-timing-function:  linear;
-    transition-delay: 0s;
+    transition-property: background-color, width;
+    transition-duration: 0.5s, 1000ms;
+    transition-timing-function:  linear, ease;
+    transition-delay: 0s, .5s;
 }
-#box1:hover { background-color: red; }
-#box1:active { background-color: blue; }
+#box1:hover { background-color: red; width: 300px; }
+#box1:active { background-color: blue; width: 50px; }
 </style>
 
 <div id="box1"></div>
