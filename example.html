@@ -12,6 +12,14 @@
 
 <script>
     var box1 = document.getElementById("box1");
-    box1.style.transition = "width 1s steps(4) 0s";
+    box1.style.transition = "width 1s ease 0s";
+    box1.addEventListener('transitionend', function(event){
+        // alert('Transition telah berakhir');
+        // window.location = "https://www.zalora.co.id/";
+        // box1.style.width='100px';
+        // alert(event.propertyName);
+        // alert(event.elapsedTime);
+        alert(event.target.id);
+    });
 </script>
 <p>Width: <input type="number" step="10" onchange="box1.style.width=this.value+'px'"></p>
