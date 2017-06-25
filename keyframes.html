@@ -1,0 +1,23 @@
+<style>
+#object1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: skyblue;
+    animation-name: animation1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animation1 {
+    0% { transform: translateX(0px); }
+    100% { transform: translateX(500px); }
+}
+</style>
+
+<div id="object1"></div>
